@@ -1,0 +1,94 @@
+.booking-form-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.form-title {
+  font-size: 42px;
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: var(--gold-light);
+  margin-bottom: 40px;
+}
+
+.booking-form {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(42, 42, 42, 0.6);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-form {
+    padding: 30px 20px;
+  }
+}

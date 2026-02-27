@@ -1,0 +1,87 @@
+.package-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.package-card.popular {
+  border-color: var(--gold);
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--black);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.package-icon {
+  font-size: 56px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
+}
+
+.package-name {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.package-price {
+  margin-bottom: 30px;
+}
+
+.currency {
+  font-size: 24px;
+  color: var(--gold-light);
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+}
+
+.package-features {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  color: var(--gold-light);
+}
+
+.package-features li svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.package-btn {
+  width: 100%;
+}
+
+.package-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+}

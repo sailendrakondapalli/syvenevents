@@ -1,0 +1,70 @@
+.service-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+}
+
+.service-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
+}
+
+.service-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+
+.service-description {
+  color: var(--gold-light);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background: var(--gold);
+  color: var(--black);
+}

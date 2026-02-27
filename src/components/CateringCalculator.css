@@ -1,0 +1,123 @@
+.catering-calculator {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.calculator-title {
+  font-size: 32px;
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.calculator-subtitle {
+  text-align: center;
+  color: var(--gold-light);
+  margin-bottom: 40px;
+}
+
+.calculator-controls {
+  margin-bottom: 40px;
+}
+
+.control-group {
+  margin-bottom: 30px;
+}
+
+.control-group label {
+  display: block;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.package-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.package-option {
+  background: rgba(42, 42, 42, 0.6);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--white);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.package-option span {
+  color: var(--gold-light);
+  font-size: 14px;
+}
+
+.package-option.active {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+.package-option.active span {
+  color: var(--black);
+}
+
+.guest-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(212, 175, 55, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.guest-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gold-light);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.calculator-result {
+  background: rgba(42, 42, 42, 0.6);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  color: var(--gold-light);
+}
+
+.result-row.total {
+  border-bottom: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 10px;
+}
