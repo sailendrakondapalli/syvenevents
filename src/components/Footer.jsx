@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-col">
-            <h3 className="footer-logo">✨ Luxury Events</h3>
-            <p>Creating unforgettable celebrations with elegance and perfection.</p>
+            <h3 className="footer-logo">✨ Syven Events</h3>
+            <p>Catering & Wedding Planner - Creating unforgettable celebrations with elegance and perfection.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-              <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+              <a href="https://instagram.com/syven_wedding_planners" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
               <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
             </div>
           </div>
@@ -43,22 +43,26 @@ const Footer = () => {
             <ul className="contact-info">
               <li>
                 <Phone size={18} />
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="tel:+918220136305">+91 82201 36305</a>
+              </li>
+              <li>
+                <Phone size={18} />
+                <a href="tel:+914431342923">+91 44313 42923</a>
               </li>
               <li>
                 <Mail size={18} />
-                <a href="mailto:info@luxuryevents.com">info@luxuryevents.com</a>
+                <a href="mailto:info@syvenevents.com">info@syvenevents.com</a>
               </li>
               <li>
                 <MapPin size={18} />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Chennai, Tamil Nadu, India</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Luxury Events. All rights reserved.</p>
+          <p>&copy; 2026 Syven Events. All rights reserved.</p>
           <div className="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

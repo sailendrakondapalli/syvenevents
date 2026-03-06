@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/919876543210?text=Hello, I want to inquire about your event services', '_blank');
+    window.open('https://wa.me/918220136305?text=Hello, I want to inquire about your event services', '_blank');
   };
 
   return (

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <Link to="/" className="logo">
             <span className="logo-icon">✨</span>
-            <span className="logo-text">Luxury Events</span>
+            <span className="logo-text">Syven Events</span>
           </Link>
 
           <div className={`nav-links ${mobileMenu ? 'active' : ''}`}>
@@ -31,9 +31,9 @@ const Navbar = () => {
             <a href="#contact" onClick={() => setMobileMenu(false)}>Contact</a>
           </div>
 
-          <a href="tel:+919876543210" className="nav-phone">
+          <a href="tel:+918220136305" className="nav-phone">
             <Phone size={20} />
-            <span>+91 98765 43210</span>
+            <span>+91 82201 36305</span>
           </a>
 
           <button className="mobile-toggle" onClick={() => setMobileMenu(!mobileMenu)}>

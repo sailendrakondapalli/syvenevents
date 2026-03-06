@@ -1,51 +1,122 @@
 export const packages = [
   {
-    id: 'silver',
-    name: 'Silver Package',
+    id: 'birthday-elegant',
+    name: 'Birthday Elegant Package',
     price: 150000,
+    icon: '🎂',
+    popular: false,
+    features: [
+      'Thematic Cake with Desserts',
+      'Thematic Decoration',
+      'Catering (100 nos)',
+      'Baby Entry',
+      'Return Gifts (100 nos)',
+      'Premium Photography',
+      'DJ',
+      'Emcee',
+      '360 degree video booth (Complimentary)'
+    ]
+  },
+  {
+    id: 'prewedding-basic',
+    name: 'Pre-Wedding & Reception Package',
+    price: 100000,
+    icon: '📸',
+    popular: false,
+    features: [
+      'Pre-Wed: Candid Photographer',
+      'Pre-Wed: Candid Cinematographer',
+      'Pre-Wed: Crane (GIMBAL)',
+      'Reception: Traditional Photographer & Videographer',
+      'Reception: Candid Photographer & Cinematographer',
+      'Reception: Crane (GIMBAL)',
+      'Unlimited Pictures',
+      'Selected graded pictures',
+      'Reels video & Save the date',
+      'Cinematic montage videos',
+      '12x36 Premium Album (100 pages, 200 pics)',
+      'Full HD Traditional Video with Pendrive'
+    ]
+  },
+  {
+    id: 'wedding-standard',
+    name: 'Wedding Standard Package',
+    price: 450000,
     icon: '💍',
     popular: false,
     features: [
-      'Basic Stage Decoration',
-      'Sound System',
-      'Basic Lighting',
-      'Standard Catering (50 guests)',
-      'Photography (4 hours)',
-      'Basic Coordination'
+      'Food (500 PAX)',
+      'Photography & Videography (Muhurtham & Reception)',
+      'Garlands (Muhurtham & Reception)',
+      'Mangalavathyam',
+      'DJ',
+      'Chendamelam',
+      'Thambula Bags',
+      'Welcome Board',
+      'Stalls'
     ]
   },
   {
-    id: 'gold',
-    name: 'Gold Package',
-    price: 300000,
+    id: 'wedding-premium',
+    name: 'Wedding Premium Package',
+    price: 600000,
     icon: '💎',
     popular: true,
     features: [
-      'Premium Stage Decoration',
-      'LED Wall Setup',
-      'Professional Photography & Videography',
-      'Catering Coordination (100 guests)',
-      'DJ & Sound System',
-      'Lighting Effects',
-      'Dedicated Event Manager'
+      'Food (800 PAX)',
+      'Photography & Videography (Both Sessions)',
+      'Garlands (Muhurtham & Reception)',
+      'Mangalavathyam',
+      'DJ & Chendamelam',
+      'LED Wall',
+      'Special Entry (Fog Pot / Cold Pyro)',
+      'Welcome Dance',
+      'E-Invite',
+      'Wedding Cake',
+      'Thambula Bags'
     ]
   },
   {
-    id: 'platinum',
-    name: 'Platinum Package',
-    price: 500000,
+    id: 'wedding-luxury',
+    name: 'Wedding Luxury Package',
+    price: 700000,
     icon: '👑',
     popular: false,
     features: [
-      'Luxury Stage Decoration',
-      'Celebrity DJ',
-      'Full Event Planning',
-      'Guest Management System',
-      'Premium Catering (200 guests)',
-      'Drone Photography',
-      'Live Streaming',
-      'Valet Parking',
-      '24/7 Support Team'
+      'Food',
+      'Photography & Videography',
+      'Garlands',
+      'Mangalavathyam',
+      'DJ & Chendamelam',
+      'LED Wall',
+      'Special Entry (Fog Pot / Cold Pyro)',
+      'Welcome Dance',
+      'Chendamelam',
+      'E-Invite',
+      'Wedding Cake',
+      'Return Gifts'
+    ]
+  },
+  {
+    id: 'photography-premium',
+    name: 'Premium Photography Package',
+    price: 100000,
+    icon: '📷',
+    popular: false,
+    features: [
+      'Candid Photographer',
+      'Candid Cinematographer',
+      'Crane (GIMBAL)',
+      'Traditional Photographer',
+      'Traditional Videographer',
+      'LED Wall (Any 1 Session)',
+      'Helicam',
+      'Unlimited Pictures',
+      'Selected graded pictures',
+      'Reels video & Save the date',
+      'Cinematic montage videos',
+      '12x36 Premium Album (100 pages, 200 pics)',
+      'Full HD Traditional Video with Pendrive'
     ]
   }
 ];
