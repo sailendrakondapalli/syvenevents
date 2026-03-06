@@ -46,10 +46,6 @@ const Footer = () => {
                 <a href="tel:+918220136305">+91 82201 36305</a>
               </li>
               <li>
-                <Phone size={18} />
-                <a href="tel:+914431342923">+91 44313 42923</a>
-              </li>
-              <li>
                 <Mail size={18} />
                 <a href="mailto:info@syvenevents.com">info@syvenevents.com</a>
               </li>
