@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920') center/cover;
+  background: url('/images/destination-wedding.jpg') center/cover;
   overflow: hidden;
 }
 

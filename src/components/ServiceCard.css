@@ -1,30 +1,39 @@
 .service-card {
-  background: rgba(26, 26, 26, 0.6);
-  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-position: center;
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: 0;
   text-align: center;
   cursor: pointer;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 40%, rgba(0,0,0,0.3) 100%);
+  transition: background 0.4s ease;
+}
+
+.service-card:hover .service-card-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 50%, rgba(212,175,55,0.15) 100%);
+}
+
+.service-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
 }
 
 .service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.service-card:hover::before {
-  opacity: 1;
+  display: none;
 }
 
 .service-card:hover {

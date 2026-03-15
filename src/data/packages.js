@@ -5,6 +5,7 @@ export const packages = [
     price: 150000,
     icon: '🎂',
     popular: false,
+    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800',
     features: [
       'Thematic Cake with Desserts',
       'Thematic Decoration',
@@ -23,6 +24,7 @@ export const packages = [
     price: 100000,
     icon: '📸',
     popular: false,
+    image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800',
     features: [
       'Pre-Wed: Candid Photographer',
       'Pre-Wed: Candid Cinematographer',
@@ -44,6 +46,7 @@ export const packages = [
     price: 450000,
     icon: '💍',
     popular: false,
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800',
     features: [
       'Food (500 PAX)',
       'Photography & Videography (Muhurtham & Reception)',
@@ -62,6 +65,7 @@ export const packages = [
     price: 600000,
     icon: '💎',
     popular: true,
+    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800',
     features: [
       'Food (800 PAX)',
       'Photography & Videography (Both Sessions)',
@@ -82,6 +86,7 @@ export const packages = [
     price: 700000,
     icon: '👑',
     popular: false,
+    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800',
     features: [
       'Food',
       'Photography & Videography',
@@ -103,6 +108,7 @@ export const packages = [
     price: 100000,
     icon: '📷',
     popular: false,
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800',
     features: [
       'Candid Photographer',
       'Candid Cinematographer',

@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-col">
-            <h3 className="footer-logo">✨ Syven Events</h3>
-            <p>Catering & Wedding Planner - Creating unforgettable celebrations with elegance and perfection.</p>
+            <h3 className="footer-logo">✨ Wed Feast Event Planners & Caterers</h3>
+            <p>Creating unforgettable celebrations with elegance and perfection.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
               <a href="https://instagram.com/syven_wedding_planners" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
               <li>
                 <Mail size={18} />
-                <a href="mailto:info@syvenevents.com">info@syvenevents.com</a>
+                <a href="mailto:inbarajfrancis6@gmail.com">inbarajfrancis6@gmail.com</a>
               </li>
               <li>
                 <MapPin size={18} />
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Syven Events. All rights reserved.</p>
+          <p>&copy; 2026 Wed Feast Event Planners & Caterers. All rights reserved.</p>
           <div className="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

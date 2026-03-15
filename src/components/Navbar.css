@@ -127,3 +127,52 @@
     display: block;
   }
 }
+
+.how-to-book-mobile {
+  width: 100%;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.how-to-book-toggle {
+  background: none;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.how-to-book-steps {
+  padding-left: 18px;
+  color: var(--gold-light);
+  font-size: 13px;
+  line-height: 2;
+  margin: 0;
+}
+
+.book-now-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.book-now-btn:hover {
+  background: #1ebe5d;
+}

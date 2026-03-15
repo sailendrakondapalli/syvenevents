@@ -35,5 +35,6 @@
   .services-grid,
   .packages-grid {
     grid-template-columns: 1fr;
+    padding: 0 8px;
   }
 }

@@ -15,13 +15,17 @@ const ServiceCard = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -10 }}
       onClick={() => navigate(`/service/${service.id}`)}
+      style={{ backgroundImage: `url(${service.images[0]})` }}
     >
-      <div className="service-icon">{service.icon}</div>
-      <h3 className="service-title">{service.title}</h3>
-      <p className="service-description">{service.description}</p>
-      <button className="service-btn">
-        View Details <ArrowRight size={18} />
-      </button>
+      <div className="service-card-overlay" />
+      <div className="service-card-content">
+        <div className="service-icon">{service.icon}</div>
+        <h3 className="service-title">{service.title}</h3>
+        <p className="service-description">{service.description}</p>
+        <button className="service-btn">
+          View Details <ArrowRight size={18} />
+        </button>
+      </div>
     </motion.div>
   );
 };

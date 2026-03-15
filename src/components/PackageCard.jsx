@@ -16,28 +16,31 @@ const PackageCard = ({ pkg, index }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -10 }}
+      style={{ backgroundImage: `url(${pkg.image})` }}
     >
       {pkg.popular && <div className="popular-badge">Most Popular</div>}
-      
-      <div className="package-icon">{pkg.icon}</div>
-      <h3 className="package-name">{pkg.name}</h3>
-      <div className="package-price">
-        <span className="currency">₹</span>
-        <span className="amount">{pkg.price.toLocaleString('en-IN')}</span>
+      <div className="package-card-overlay" />
+      <div className="package-card-content">
+        <div className="package-icon">{pkg.icon}</div>
+        <h3 className="package-name">{pkg.name}</h3>
+        <div className="package-price">
+          <span className="currency">₹</span>
+          <span className="amount">{pkg.price.toLocaleString('en-IN')}</span>
+        </div>
+
+        <ul className="package-features">
+          {pkg.features.map((feature, idx) => (
+            <li key={idx}>
+              <Check size={20} />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+
+        <button onClick={handleWhatsApp} className="btn btn-primary package-btn">
+          Select Package
+        </button>
       </div>
-
-      <ul className="package-features">
-        {pkg.features.map((feature, idx) => (
-          <li key={idx}>
-            <Check size={20} />
-            <span>{feature}</span>
-          </li>
-        ))}
-      </ul>
-
-      <button onClick={handleWhatsApp} className="btn btn-primary package-btn">
-        Select Package
-      </button>
     </motion.div>
   );
 };
