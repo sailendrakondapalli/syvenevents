@@ -51,7 +51,10 @@ const Navbar = () => {
         <div className="navbar-content">
           <Link to="/" className="logo">
             <span className="logo-icon">✨</span>
-            <span className="logo-text">Wed Feast</span>
+            <div className="logo-text-group">
+              <span className="logo-text">Wed Feast</span>
+              <span className="logo-tagline">Events & Caterings</span>
+            </div>
           </Link>
 
           <div ref={menuRef} className={`nav-links ${mobileMenu ? 'active' : ''}`}>

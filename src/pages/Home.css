@@ -4,7 +4,7 @@
 
 .section-subtitle {
   text-align: center;
-  color: var(--gold-light);
+  color: #f4c87a;
   font-size: 18px;
   margin-bottom: 60px;
 }
@@ -23,18 +23,77 @@
   margin: 0 auto;
 }
 
-.packages-section {
-  background: var(--dark-gray);
+/* Royal Red + Cherry Dark section backgrounds */
+.services-section   { background: #2d0010; position: relative; padding-bottom: 80px; }
+.packages-section   { background: #1a0008; position: relative; padding-bottom: 80px; }
+.calculator-section { background: #3b0015; position: relative; padding-bottom: 80px; }
+.addons-section     { background: #1a0008; position: relative; padding-bottom: 80px; }
+.booking-section    { background: #2d0010; position: relative; }
+
+/* Wrappers for standalone sections that need wave dividers */
+.stats-wrapper {
+  position: relative;
+  padding-bottom: 80px;
+  background: #4a1020;
 }
 
-.calculator-section {
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+.gallery-wrapper {
+  position: relative;
+  padding-bottom: 80px;
+  background: #2d0010;
+}
+
+.testimonials-wrapper {
+  position: relative;
+  padding-bottom: 80px;
+  background: #1a0008;
+}
+
+/* Wave divider */
+.wave-divider {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 70px;
 }
 
 @media (max-width: 768px) {
   .services-grid,
   .packages-grid {
     grid-template-columns: 1fr;
+    padding: 0 4px;
+    gap: 16px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 28px;
     padding: 0 8px;
+  }
+
+  .services-section,
+  .packages-section,
+  .calculator-section,
+  .addons-section {
+    padding-bottom: 60px;
+  }
+
+  .stats-wrapper,
+  .gallery-wrapper,
+  .testimonials-wrapper {
+    padding-bottom: 60px;
+  }
+
+  .wave-divider svg {
+    height: 36px;
   }
 }

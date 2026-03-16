@@ -19,7 +19,6 @@ const ServiceCard = ({ service, index }) => {
     >
       <div className="service-card-overlay" />
       <div className="service-card-content">
-        <div className="service-icon">{service.icon}</div>
         <h3 className="service-title">{service.title}</h3>
         <p className="service-description">{service.description}</p>
         <button className="service-btn">

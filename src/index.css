@@ -11,16 +11,20 @@
   --gold-light: #F4E4C1;
   --gold-dark: #B8941E;
   --black: #0A0A0A;
-  --dark-gray: #1A1A1A;
-  --medium-gray: #2A2A2A;
-  --light-gray: #3A3A3A;
+  --dark-gray: #1e1a0e;
+  --medium-gray: #2a2310;
+  --light-gray: #3a3218;
   --white: #FFFFFF;
+  --section-bg-1: #fff8e7;
+  --section-bg-2: #fff3d6;
+  --section-bg-3: #ffefc4;
+  --section-bg-4: #fff8e7;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--black);
-  color: var(--white);
+  background: #1a0008;
+  color: #f4e4c1;
   overflow-x: hidden;
   line-height: 1.6;
 }
@@ -100,7 +104,7 @@ html {
   font-size: 48px;
   text-align: center;
   margin-bottom: 60px;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  background: linear-gradient(135deg, #D4AF37 0%, #F4E4C1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -108,16 +112,21 @@ html {
 
 @media (max-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   
   .section-title {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+
+  .container {
+    padding: 0 16px;
   }
   
   .btn {
-    padding: 12px 24px;
+    padding: 12px 22px;
     font-size: 14px;
   }
 }

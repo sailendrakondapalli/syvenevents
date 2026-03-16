@@ -121,3 +121,55 @@
   color: var(--gold);
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .catering-calculator {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .calculator-title {
+    font-size: 22px;
+  }
+
+  .calculator-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .control-group label {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .package-options {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .package-option {
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+
+  .package-option span {
+    font-size: 12px;
+  }
+
+  .calculator-result {
+    padding: 20px 14px;
+  }
+
+  .result-row {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .result-row.total {
+    font-size: 18px;
+  }
+
+  .slider-labels {
+    font-size: 12px;
+  }
+}

@@ -96,12 +96,50 @@
 }
 
 @media (max-width: 768px) {
+  .addon-section {
+    padding: 40px 0;
+  }
+
+  .addon-title {
+    font-size: 26px;
+  }
+
+  .addon-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .addon-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .addon-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .addon-card h4 {
+    font-size: 16px;
+    padding-right: 32px;
+  }
+
+  .addon-price {
+    font-size: 20px;
+  }
+
   .addon-total {
     flex-direction: column;
     text-align: center;
+    padding: 20px 16px;
   }
   
   .addon-total button {
     width: 100%;
+  }
+
+  .total-amount {
+    font-size: 26px;
   }
 }
