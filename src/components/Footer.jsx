@@ -7,7 +7,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-col">
-            <h3 className="footer-logo">✨ Wed Feast Event Planners & Caterers</h3>
+            <h3 className="footer-logo">
+              <img src="/images/logo.png" alt="Wed Feast Logo" className="footer-logo-img" />
+              Wed Feast Event Planners & Caterers
+            </h3>
             <p>Creating unforgettable celebrations with elegance and perfection.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><Facebook size={20} /></a>

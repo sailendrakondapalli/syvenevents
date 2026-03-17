@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <Link to="/" className="logo">
-            <span className="logo-icon">✨</span>
+            <img src="/images/logo.png" alt="Wed Feast Logo" className="logo-img" />
             <div className="logo-text-group">
               <span className="logo-text">Wed Feast</span>
               <span className="logo-tagline">Events & Caterings</span>

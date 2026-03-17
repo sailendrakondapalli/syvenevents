@@ -4,7 +4,7 @@
   border: 2px solid rgba(212, 175, 55, 0.2);
   border-radius: 20px;
   padding: 40px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -18,58 +18,28 @@
 .calculator-subtitle {
   text-align: center;
   color: var(--gold-light);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+  font-size: 15px;
 }
 
-.calculator-controls {
-  margin-bottom: 40px;
-}
-
+/* Guest slider */
 .control-group {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .control-group label {
   display: block;
   color: var(--gold);
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 14px;
+  font-size: 17px;
 }
 
-.package-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.package-option {
-  background: rgba(42, 42, 42, 0.6);
-  border: 2px solid rgba(212, 175, 55, 0.2);
-  border-radius: 12px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: var(--white);
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.package-option span {
+.guest-count-val {
   color: var(--gold-light);
-  font-size: 14px;
-}
-
-.package-option.active {
-  background: var(--gold);
-  color: var(--black);
-  border-color: var(--gold);
-}
-
-.package-option.active span {
-  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 6px;
 }
 
 .guest-slider {
@@ -79,6 +49,7 @@
   background: rgba(212, 175, 55, 0.2);
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .guest-slider::-webkit-slider-thumb {
@@ -96,36 +67,176 @@
   display: flex;
   justify-content: space-between;
   color: var(--gold-light);
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 8px;
 }
 
-.calculator-result {
-  background: rgba(42, 42, 42, 0.6);
-  border-radius: 12px;
-  padding: 30px;
+/* Menu sections */
+.menu-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
 }
 
-.result-row {
+.menu-section {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menu-section-header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(42, 35, 10, 0.5);
+  border: none;
   color: var(--gold-light);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: left;
 }
 
-.result-row.total {
-  border-bottom: none;
-  font-size: 24px;
-  font-weight: 700;
+.menu-section-header:hover,
+.menu-section-header.open {
+  background: rgba(212, 175, 55, 0.12);
   color: var(--gold);
-  margin-top: 10px;
+}
+
+.section-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-badge {
+  background: var(--gold);
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  min-width: 22px;
+  text-align: center;
+}
+
+.section-arrow {
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+  padding: 0 18px 16px;
+  background: rgba(20, 15, 5, 0.4);
+}
+
+.section-actions {
+  display: flex;
+  gap: 8px;
+  padding: 10px 18px 8px;
+  background: rgba(20, 15, 5, 0.4);
+}
+
+.sec-action-btn {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid;
+  transition: all 0.2s;
+}
+
+.sec-action-btn.select-all {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.sec-action-btn.select-all:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.sec-action-btn.clear-all {
+  border-color: rgba(212, 175, 55, 0.3);
+  color: var(--gold-light);
+  background: transparent;
+}
+
+.sec-action-btn.clear-all:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--gold-light);
+  font-size: 14px;
+  background: rgba(42, 35, 10, 0.3);
+}
+
+.menu-item:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.menu-item.checked {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.menu-item input[type="checkbox"] {
+  accent-color: var(--gold);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Submit */
+.calculator-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.submit-summary {
+  color: var(--gold-light);
+  font-size: 15px;
+}
+
+.submit-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 14px 28px;
 }
 
 @media (max-width: 768px) {
   .catering-calculator {
-    padding: 24px 16px;
-    border-radius: 16px;
+    padding: 20px 14px;
+    border-radius: 14px;
   }
 
   .calculator-title {
@@ -133,43 +244,37 @@
   }
 
   .calculator-subtitle {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 24px;
   }
 
-  .control-group label {
-    font-size: 15px;
-    margin-bottom: 10px;
+  .menu-items-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 0 12px 12px;
   }
 
-  .package-options {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  .section-actions {
+    padding: 8px 12px 6px;
   }
 
-  .package-option {
-    padding: 14px 12px;
+  .menu-item {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  .menu-section-header {
     font-size: 14px;
+    padding: 12px 14px;
   }
 
-  .package-option span {
-    font-size: 12px;
+  .calculator-submit {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .calculator-result {
-    padding: 20px 14px;
-  }
-
-  .result-row {
-    font-size: 14px;
-    padding: 12px 0;
-  }
-
-  .result-row.total {
-    font-size: 18px;
-  }
-
-  .slider-labels {
-    font-size: 12px;
+  .submit-whatsapp {
+    width: 100%;
+    justify-content: center;
   }
 }

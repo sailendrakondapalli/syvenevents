@@ -24,8 +24,11 @@ const PackageCard = ({ pkg, index }) => {
         <div className="package-icon">{pkg.icon}</div>
         <h3 className="package-name">{pkg.name}</h3>
         <div className="package-price">
-          <span className="currency">₹</span>
-          <span className="amount">{pkg.price.toLocaleString('en-IN')}</span>
+          <span className="starts-from">Starts from</span>
+          <div>
+            <span className="currency">₹</span>
+            <span className="amount">{pkg.price.toLocaleString('en-IN')}</span>
+          </div>
         </div>
 
         <ul className="package-features">
