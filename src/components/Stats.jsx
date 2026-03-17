@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from 'react';
 import './Stats.css';
 
 const stats = [
-  { id: 1, value: 500, label: 'Events Completed', suffix: '+' },
-  { id: 2, value: 300, label: 'Happy Clients', suffix: '+' },
+  { id: 1, value: 1000, label: 'Events Completed', suffix: '+' },
+  { id: 2, value: 1000, label: 'Happy Clients', suffix: '+' },
   { id: 3, value: 10, label: 'Years Experience', suffix: '+' },
   { id: 4, value: 50, label: 'Team Members', suffix: '+' }
 ];

@@ -7,6 +7,7 @@ const testimonials = [
     id: 1,
     name: 'Priya & Rahul',
     event: 'Wedding',
+    location: 'Hyderabad, Telangana',
     text: 'They handled our wedding perfectly. Everything was flawless from decoration to catering. Our guests are still talking about it!',
     rating: 5
   },
@@ -14,6 +15,7 @@ const testimonials = [
     id: 2,
     name: 'Amit Sharma',
     event: 'Corporate Event',
+    location: 'Delhi',
     text: 'Professional service and attention to detail. Our annual conference was a huge success thanks to their team.',
     rating: 5
   },
@@ -21,6 +23,7 @@ const testimonials = [
     id: 3,
     name: 'Sneha Patel',
     event: 'Birthday Party',
+    location: 'Chennai, Tamil Nadu',
     text: 'Made my daughter\'s birthday magical! The decoration and entertainment were beyond our expectations.',
     rating: 5
   },
@@ -28,6 +31,7 @@ const testimonials = [
     id: 4,
     name: 'Vikram & Anjali',
     event: 'Engagement',
+    location: 'Vijayawada, Andhra Pradesh',
     text: 'Luxury Events made our engagement ceremony unforgettable. Highly recommend their services!',
     rating: 5
   }
@@ -63,6 +67,7 @@ const Testimonials = () => {
               <div className="testimonial-author">
                 <h4>{testimonial.name}</h4>
                 <span>{testimonial.event}</span>
+                <span className="testimonial-location">📍 {testimonial.location}</span>
               </div>
             </motion.div>
           ))}

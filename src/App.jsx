@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import IntroSplash from './components/IntroSplash';
 import Home from './pages/Home';
 import ServiceDetails from './pages/ServiceDetails';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <IntroSplash />
       <div className="App">
         <Navbar />
         <Routes>

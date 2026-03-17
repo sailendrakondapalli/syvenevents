@@ -77,6 +77,8 @@ const MENU_SECTIONS = [
 
 const CateringCalculator = () => {
   const [guests, setGuests] = useState(100);
+  const [manualGuests, setManualGuests] = useState('');
+  const [customItems, setCustomItems] = useState('');
   const [selected, setSelected] = useState({});
   const [openSections, setOpenSections] = useState({ welcome_drinks: true });
 
@@ -105,7 +107,8 @@ const CateringCalculator = () => {
   const totalSelected = Object.values(selected).flat().length;
 
   const handleSubmit = () => {
-    const lines = [`*Catering Enquiry*`, `Guests: ${guests}`];
+    const guestCount = manualGuests ? manualGuests : guests;
+    const lines = [`*Catering Enquiry*`, `Guests: ${guestCount}`];
     MENU_SECTIONS.forEach(sec => {
       const items = selected[sec.id];
       if (items && items.length > 0) {
@@ -113,7 +116,11 @@ const CateringCalculator = () => {
         items.forEach(item => lines.push(`  • ${item}`));
       }
     });
-    if (totalSelected === 0) {
+    if (customItems.trim()) {
+      lines.push(`\n*Additional Items / Special Requests*`);
+      lines.push(customItems.trim());
+    }
+    if (totalSelected === 0 && !customItems.trim()) {
       lines.push('\n_(No items selected yet)_');
     }
     const msg = encodeURIComponent(lines.join('\n'));
@@ -127,17 +134,25 @@ const CateringCalculator = () => {
 
       {/* Guest count */}
       <div className="control-group">
-        <label>Number of Guests: <span className="guest-count-val">{guests}</span></label>
+        <label>Number of Guests: <span className="guest-count-val">{manualGuests || guests}</span></label>
         <input
           type="range"
           min="50"
           max="1000"
           step="10"
           value={guests}
-          onChange={e => setGuests(Number(e.target.value))}
+          onChange={e => { setGuests(Number(e.target.value)); setManualGuests(''); }}
           className="guest-slider"
         />
         <div className="slider-labels"><span>50</span><span>500</span><span>1000</span></div>
+        <input
+          type="number"
+          min="1"
+          placeholder="Or type exact number of guests..."
+          value={manualGuests}
+          onChange={e => setManualGuests(e.target.value)}
+          className="manual-guests-input"
+        />
       </div>
 
       {/* Menu sections */}
@@ -191,6 +206,18 @@ const CateringCalculator = () => {
             )}
           </div>
         ))}
+      </div>
+
+      {/* Custom items */}
+      <div className="custom-items-group">
+        <label className="custom-items-label">Additional Items / Special Requests</label>
+        <textarea
+          className="custom-items-textarea"
+          placeholder="Type any specific items or special requests you want..."
+          value={customItems}
+          onChange={e => setCustomItems(e.target.value)}
+          rows={3}
+        />
       </div>
 
       {/* Submit */}

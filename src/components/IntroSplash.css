@@ -1,0 +1,66 @@
+.intro-splash {
+  position: fixed;
+  inset: 0;
+  background: #1a0008;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* The horizontal gold line */
+.intro-line {
+  width: 80vw;
+  max-width: 700px;
+  height: 3px;
+  background: linear-gradient(90deg, #D4AF37, #F4E4C1, #D4AF37);
+  transform-origin: left center;
+  border-radius: 2px;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.6);
+}
+
+/* Number + label sitting above the line */
+.intro-line-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 8px;
+}
+
+.intro-count {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, #D4AF37 0%, #F4E4C1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-width: 220px;
+  text-align: center;
+}
+
+.intro-clients-label {
+  color: #f4c87a;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .intro-line {
+    width: 90vw;
+  }
+  .intro-count {
+    font-size: 56px;
+    min-width: 160px;
+  }
+  .intro-clients-label {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}

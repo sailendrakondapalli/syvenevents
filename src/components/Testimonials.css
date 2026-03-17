@@ -41,7 +41,8 @@
 }
 
 .testimonial-author h4 { color: var(--gold); font-size: 18px; margin-bottom: 5px; }
-.testimonial-author span { color: #f4c87a; font-size: 14px; }
+.testimonial-author span { color: #f4c87a; font-size: 14px; display: block; }
+.testimonial-location { color: #aaa; font-size: 13px; margin-top: 4px; }
 
 @media (max-width: 768px) {
   .testimonials-section {
